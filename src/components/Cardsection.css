@@ -1,0 +1,33 @@
+.card__section{
+    padding: 20px;
+    color: #000;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__items{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    gap:20px
+}
+
+@media screen and (max-width: 960px){
+    .card__items:nth-child(2){
+        margin-top: 0;
+    }
+
+}

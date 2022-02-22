@@ -1,0 +1,36 @@
+.accordion__container{
+    margin-top: 50px;
+}
+.accordion{
+    
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px lightgray;
+    width: 600px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.accordion__content{
+    max-height: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.accordion__content.active{
+    padding: 20px;
+    max-height: 200px;
+    opacity: 1;
+}
+
+.accordion__icon.active{
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+

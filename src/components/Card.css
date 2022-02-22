@@ -1,0 +1,48 @@
+.card{
+    
+    max-width: 600px;
+    box-shadow: 0 6px 6px lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card.small{
+    max-width: 350px;
+    padding: 0;
+}
+.card__image{
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+}
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card img:hover{
+    transform:scale(1.5);
+    transition: 0.3s ease;
+    border-radius: 10px;
+
+
+}
+.card__content{
+    color: #252e48;
+    padding: 30px;
+    font-size: 1em;
+}
+
+@media screen and (max-width:960px){
+    .card{
+        width: 320px;
+    }
+    .card.small{
+        width: 320px;
+    }
+}
